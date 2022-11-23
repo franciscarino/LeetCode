@@ -1,3 +1,6 @@
+'use strict';
+
+
 // Longest Word
 /*
 Have the function LongestWord(sen) take the sen parameter being passed 
