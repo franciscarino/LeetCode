@@ -5,6 +5,7 @@
  * Return the head of the merged linked list.
  */
 
+//TODO:
 function mergeTwoLists(list1, list2) {
 
 }
