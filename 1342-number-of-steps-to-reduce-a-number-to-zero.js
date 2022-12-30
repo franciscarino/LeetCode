@@ -5,11 +5,10 @@ function numberOfSteps(num) {
   while (num) {
     if (num % 2 === 0) {
       num /= 2;
-      output++;
     } else {
       num -= 1;
-      output++;
     }
+    output++;
   }
   return output;
 }
