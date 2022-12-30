@@ -32,3 +32,19 @@ function groupAnagrams(strs) {
   }
   return output;
 }
+
+// alternate solution
+
+function groupAnagrams2(strs) {
+  const anagrams = {};
+
+  for (const s of strs) {
+    const sortedStr = s.split('').sort().join('');
+    if (sortedStr in anagrams) {
+      anagrams[sortedStr].push(s);
+    } else {
+      anagrams[sortedStr] = [s];
+    }
+  }
+  return Object.values(anagrams);
+}
