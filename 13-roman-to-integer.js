@@ -25,8 +25,8 @@ function romanToInt(s) {
     if (roman[s[i]] < roman[s[i + 1]]) {
       output -= roman[s[i]];
     } else {
-      result += roman[s[i]];
+      output += roman[s[i]];
     }
   }
-  return result;
+  return output;
 }
