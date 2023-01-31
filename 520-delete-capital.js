@@ -5,7 +5,7 @@ function detectCapitalUse(word) {
     return true;
   } else if (word === word.toLowerCase()) {
     return true;
-  } else if (word[0] === word[0].toUpperCase()) {
+  } else if (word[0] === word[0].toUpperCase() && word.slice(1) === word.slice(1).toLowerCase()) {
     return true;
   } else {
     return false;
